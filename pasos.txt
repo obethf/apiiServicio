@@ -1,0 +1,15 @@
+…or create a new repository on the command line
+echo "# apiServicio" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/obethf/apiServicio.git
+git push -u origin main
+Eliminar los archivos generados del staging de Git:
+git rm -r --cached obj/
+Confirmar los cambios:
+git add .gitignore
+git commit -m "Ignorar carpetas bin/ y obj/"
+Hacer push si ya estás conectado al repositorio remoto:
+git push
